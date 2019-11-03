@@ -2,7 +2,11 @@
 
 React é uma biblioteca JavaScript criada pelo Facebook para administrar interfaces de usários para aplicações web facilmente.
 
+### **Create-React-App**
+
 Para criar aplicação já configurada podemos utilizar `npx create-react-app my-app`
+
+### **JSX**
 
 Quando importamos `react`, é permitido utilizar JSX. O JSX  é uma extensão da sintaxe do JavaScript que lembra XML e se parece muito com HTML. Por exemplo:
 
@@ -27,3 +31,7 @@ React.createElement(
   )
 );
 ```
+
+### **Web Components**
+
+A arquitetura de projetos usando componentes web possibilita encapsular e reutilizar partes do seu sistema e formar uma árvore de componentes que são utilizados pelo DOM na `single page application`. 
