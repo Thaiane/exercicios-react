@@ -35,3 +35,26 @@ React.createElement(
 ### **Web Components**
 
 A arquitetura de projetos usando componentes web possibilita encapsular e reutilizar partes do seu sistema e formar uma árvore de componentes que são utilizados pelo DOM na `single page application`. 
+
+### **Multiplos Componentes**
+
+Há três formas de usar múltiplos componentes na mesma estrutura: encapsulando  com uma `div`, encapsulando com o `React.Fragment` ou usando notação do JSX de forma a encapsular com `[]` e separar os componentes com uma vírgula. Exemplos:
+
+```
+const MultiComponentesComFragment = props =>
+    <React.Fragment>
+        <h1>Oi, eu uso Fragment</h1>
+        <h2>Olá!</h2>
+    </React.Fragment>
+
+const MultiComponentesComDiv = props =>
+    <div>
+        <h1>Oi, eu uso Div</h1>
+        <h2>Olá!</h2>
+    </div>
+
+const MultiComponentesComJSX = props => [
+    <h1>Oi, eu uso JSX</h1>,
+    <h2>Olá!</h2>
+]
+```
