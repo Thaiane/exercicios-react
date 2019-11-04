@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () =>
+export default (props) =>
     <div>
-        <h1>Primeiro Componente!</h1>
+        <h1>{props.value}</h1>
     </div>
