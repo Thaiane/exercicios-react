@@ -43,8 +43,8 @@ Há três formas de usar múltiplos componentes na mesma estrutura: encapsulando
 ```
 const MultiComponentesComFragment = props =>
     <React.Fragment>
-        <h1>Oi, eu uso Fragment</h1>
-        <h2>Olá!</h2>
+      <h1>Oi, eu uso Fragment</h1>
+      <h2>Olá!</h2>
     </React.Fragment>
 
 const MultiComponentesComDiv = props =>
@@ -58,3 +58,4 @@ const MultiComponentesComJSX = props => [
     <h2>Olá!</h2>
 ]
 ```
+
