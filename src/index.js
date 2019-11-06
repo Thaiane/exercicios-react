@@ -8,6 +8,13 @@ const elemento = document.getElementById('root')
 
 ReactDom.render(
     <div>
-        <Familia />
+        <Familia sobrenome='Braga'>
+            <Membro nome='Thai' />
+            {/* <Membro nome='Tom' /> */}
+        </Familia>
+        <Familia sobrenome='Medeiros'>
+            <Membro nome='Bia' />
+            {/* <Membro nome='Mauricio' /> */}
+        </Familia>
     </div>
     , elemento)

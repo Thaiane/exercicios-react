@@ -59,3 +59,13 @@ const MultiComponentesComJSX = props => [
 ]
 ```
 
+### Props do componente pai para filho
+
+O componente família tem um outro componente chamado Membro. Quero passar as propriedades que recebi em Familia para Membros (filhos da família por ser uma "tag dentro de tag"). Um jeito comumente utilizado é passar todas as propriedades como uma cópia usando [spread](https://pt-br.reactjs.org/docs/jsx-in-depth.html#spread-attributes), ou seja, `...props`.
+```
+export default (props) =>
+  <div>
+      <h1>Família</h1>
+      {React.cloneElement(props.children, { ...props })}
+  </div>
+```
