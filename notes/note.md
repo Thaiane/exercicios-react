@@ -69,3 +69,6 @@ export default (props) =>
       {React.cloneElement(props.children, { ...props })}
   </div>
 ```
+### This
+
+`This`em JS aponta sempre para quem chamou. Isso é confuso porque a gente acha que o this é do arquivo que estamos implementando, mas se o browser chamar essa função, então o this será relacionado ao browser. Para resolver isso podemos usar um `bind`no construtor ou chamar nossa função como `arrow function`. A `arrow function` associa o `this` pelo contexto léxico, e nao de quem chama.
