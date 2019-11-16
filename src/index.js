@@ -1,12 +1,12 @@
 import ReactDom from 'react-dom'
 import React from 'react'
-import Pai from './components/Pai'
+import ComponenteClasse from './components/ComponenteClasse'
 
 
 const elemento = document.getElementById('root')
 
 ReactDom.render(
     <div>
-        <Pai />
+        <ComponenteClasse msg="Oi" />
     </div>
     , elemento)
